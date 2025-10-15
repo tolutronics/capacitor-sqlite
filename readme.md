@@ -12,6 +12,16 @@
 <p align="center">
   A Capacitor plugin providing SQLite-based key-value storage for simple data of <strong>type string only</strong> across iOS, Android, Electron, and Web platforms.</p>
 
+## Introduction
+
+**Note**: This is a fork of the [@capacitor-community/capacitor-data-storage-sqlite](https://github.com/capacitor-community/capacitor-data-storage-sqlite) plugin (originally created by [Jean Pierre Quéau](https://github.com/jepiqueau) and maintained by [Capgo](https://github.com/Cap-go)). The fork was created to:
+
+- **Maintain Capacitor 7 compatibility**: Ensure the plugin works seamlessly with the latest Capacitor versions
+- **Active development and maintenance**: Provide timely updates and bug fixes
+- **Enhanced stability**: Improve reliability across all platforms (iOS, Android, Web, Electron)
+- **Community support**: Offer faster response to issues and feature requests
+- **Custom improvements**: Add features and optimizations specific to project requirements
+
 <p align="center">
   <img src="https://img.shields.io/maintenance/yes/2024?style=flat-square" />
   <a href="https://github.com/Cap-go/capacitor-data-storage-sqlite/actions?query=workflow%3A%22CI%22"><img src="https://img.shields.io/github/workflow/status/Cap-go/capacitor-data-storage-sqlite/CI?style=flat-square" /></a>
@@ -29,6 +39,41 @@
 | Maintainer    | GitHub                                      | Social |
 | ------------- | ------------------------------------------- | ------ |
 | Tolutronics   | [tolutronics](https://github.com/tolutronics) |        |
+
+## Key Features
+
+- **🔐 Encrypted Storage**: SQLCipher support for encrypted databases (iOS & Android)
+- **🌐 Cross-Platform**: Works on iOS, Android, Electron, and Web
+- **⚡ High Performance**: SQLite-based storage for fast read/write operations
+- **💾 Persistent Storage**: Data persists across app restarts and updates
+- **📦 Simple Key-Value API**: Easy-to-use string-based storage interface
+- **🔄 Import/Export**: JSON import/export functionality for data migration
+- **📊 Multiple Tables**: Support for multiple tables within a database
+- **🎯 Type-Safe**: Full TypeScript support with detailed type definitions
+- **🔒 Transaction Safety**: Improved transaction handling for data integrity
+- **📱 Web Support**: LocalForage-based implementation for web platform
+
+## Recent Updates
+
+### Version 6.0.x (Latest - Capacitor 7)
+- **Capacitor 7 Support**: Full compatibility with Capacitor 7 framework
+- **Dependency Updates**: Updated to latest SQLCipher and androidx.sqlite versions
+- **Performance Improvements**: Database connections optimized for better performance
+- **Enhanced Stability**: Multiple bug fixes for Android single quotes handling
+- **CI/CD Improvements**: Automated testing and deployment pipelines
+- **Build System Updates**: Modernized build scripts and formatting
+
+### Version 5.0.x (Capacitor 5)
+- **Capacitor 5 Compatibility**: Updated for Capacitor 5 framework
+- **Android modernization**: Migrated to androidx.sqlite for better compatibility
+- **Improved Error Handling**: Enhanced try-catch error handling across platforms
+
+### Version 4.x and Earlier
+- **Database Encryption**: SQLCipher integration for iOS and Android
+- **Import/Export Features**: JSON-based data import/export functionality
+- **Multi-table Support**: Added support for multiple tables per database
+- **Electron Support**: sqlite3-based implementation for Electron platform
+- **Web Platform**: LocalForage integration for browser storage
 
 ## Browser Support
 
@@ -181,6 +226,13 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 ## Acknowledgments
 
-This plugin is based on the original work by [Jean Pierre Quéau (@jepiqueau)](https://github.com/jepiqueau) and the [Capgo team](https://github.com/Cap-go). We are grateful for their contributions to the Capacitor community.
+This plugin is a fork of [@capacitor-community/capacitor-data-storage-sqlite](https://github.com/capacitor-community/capacitor-data-storage-sqlite). We are deeply grateful to:
+
+- **[Jean Pierre Quéau (@jepiqueau)](https://github.com/jepiqueau)** - Original creator and architect of this excellent plugin
+- **[Capgo Team](https://github.com/Cap-go)** - Maintainers who kept the plugin updated and stable
+- **All original contributors** - Listed below in the contributors section
+
+Their outstanding work created the foundation for this fork, and we continue to benefit from their expertise and dedication to the Capacitor community.
+
 <br>
 
